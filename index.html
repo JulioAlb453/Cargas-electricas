@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargas electricas</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="conteiner">
+        <h1>Calculadora de Cargas electricas</h1>
+    </div>
+    <form action="" id="cargas-form">
+        <div>
+            <label for="q1"> Carga 1(q1):</label>
+            <input type="number" name="" id="q1" >
+            <select name="" id="q1-unidad">
+                <option value="1">Coulum</option>
+                <option value="1e-3">Milicoulomb</option>
+                <option value="1e-9">Nanocoulomb</option>
+            </select>
+        </div>
+        <div>
+            <label for="q2">Carga 2 (q2):</label>
+            <input type="number" id="q2" >
+            <select name="" id="q2-unidad">
+                <option value="1">Coulum</option>
+                <option value="1e-3">Milicoulomb</option>
+                <option value="1e-9">Nanocoulomb</option>
+            </select>
+        </div>
+        <div>
+            <label for="q3">Carga 3 (q3):</label>
+            <input type="number" id="q3" >
+            <select name="" id="q3-unidad">
+                <option value="1">Coulum</option>
+                <option value="1e-3">Milicoulomb</option>
+                <option value="1e-9">Nanocoulomb</option>
+            </select>
+        </div>
+        <div>
+            <label for="r12">Distancia entre q1 y q2</label>
+            <input type="number" id="r12" >
+            <select  id="r12-unidad">
+                <option value="1"> Metro </option>
+                <option value="0.3048">Pie</option>
+                <option value="0.9144">Yarda</option>
+                <option value="1609.34">Milla</option>
+            </select>
+        </div>
+        <div>
+            <label for="r13">Distancia entre q1 y q3</label>
+            <input type="number" id="r13" >
+            <select  id="r13-unidad">
+                <option value="1"> Metro </option>
+                <option value="0.3048">Pie</option>
+                <option value="0.9144">Yarda</option>
+                <option value="1609.34">Milla</option>
+            </select>
+        </div>
+        <div>
+            <label for="r23">Distancia entre q2 y q3</label>
+            <input type="number" id="r23">
+            <select  id="r23-unidad">
+                <option value="1"> Metro </option>
+                <option value="0.3048">Pie</option>
+                <option value="0.9144">Yarda</option>
+                <option value="1609.34">Milla</option>
+            </select>
+        </div>
+        <button type="submit">Calcular Fuerza</button>
+    </form>
+    <div id="result"></div>
+    <script src="index.js"></script>
+</body>
+</html>
